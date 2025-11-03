@@ -1,0 +1,63 @@
+/* Buttons */
+[class$="baseButton__content"] {
+    background: var(--bcbackground-2) !important;
+    border-color: var(--bcborders) !important;
+    color: var(--bctext-1) !important;
+}
+
+[class$="baseButton__content"] * {
+    color: var(--bctext-1) !important;
+}
+
+*:hover > [class$="baseButton__content"] {
+    background: var(--bcbackground-1) !important;
+}
+
+/* Inputs */
+[class$="textInput__facade"] {
+    background: var(--bcbackground-1) !important;
+    border: 0.0625rem solid var(--bcborders) !important;
+}
+
+.ajas-search-widget input {
+    background: var(--bcbackground-2) !important;
+    color: var(--bctext-1) !important;
+    border-color: var(--bcborders) !important;
+}
+
+.ajas-search-widget input::placeholder {
+    color: var(--bctext-2) !important;
+}
+
+/* Tables */
+table, thead, tbody, tr, th, td {
+    background: none !important;
+    border-color: var(--bcborders) !important;
+}
+
+/* Course Tray */
+.courses-tray :not(a) > [class$="-text"] {
+    color: var(--bctext-2) !important;
+}
+
+/* Assignments */
+[data-testid="attempt-tab"] > div {
+    background: var(--bcbackground-1) !important;
+    border-top: 2px solid var(--bcborders) !important;
+    padding: 10px;
+}
+
+.question_text > span,
+.question_html > span,
+.answer_text > span,
+.answer_html > span
+.answer_label > span,
+.score_value {
+    color: var(--bctext-1) !important;
+}
+
+/* Inbox */
+[data-testid="tool-bar"] {
+    background: var(--bcbackground-1) !important;
+    border-color: var(--bcborders) !important;
+}
