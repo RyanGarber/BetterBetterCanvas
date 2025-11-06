@@ -8,10 +8,9 @@ Made for **ViolentMonkey** on Firefox.
 
 |  |  |
 | ------- | ----- |
-| `node index.js start [port]` | **port** defaults to 9080 |
+| `node index.js start [port]` | **port** is random if unspecified |
 
-* Click **Reinstall**
 * Click **Track changes**
-* Check **Refresh**
+* Check **Reload page**
 
 Edits to **index.user.js** will automatically apply to any open Canvas page.
