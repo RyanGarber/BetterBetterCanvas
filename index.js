@@ -11,8 +11,14 @@ program
         app.use(express.static(__dirname));
         app.listen(port, () => {
             console.log(`Script server started at http://localhost:${port}`);
-            exec(`open -a "Firefox" "http://localhost:${port}/index.user.js"`);
-            console.log('Script watcher opened in Firefox');
+            try {
+                const commands = {darwin: 'open -a "Firefox"', win32: 'start Firefox', linux: 'nohup firefox'};
+                exec(`${commands[process.platform]} "http://localhost:${port}/index.user.js"`);
+            }
+            catch (e) {
+                console.error('Failed to open Firefox automatically. Open this URL to continue:');
+                console.error(`http://localhost:${port}/index.user.js`);
+            }
         });
     });
 
