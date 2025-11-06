@@ -47,11 +47,12 @@ table, thead, tbody, tr, th, td {
     padding: 10px;
 }
 
-.question_text > span,
-.question_html > span,
-.answer_text > span,
-.answer_html > span
-.answer_label > span,
+.question_text > *,
+.question_html > *,
+.answer_text > *,
+.answer_html > *
+.answer_label > *,
+.answer > *,
 .score_value {
     color: var(--bctext-1) !important;
 }
@@ -59,5 +60,10 @@ table, thead, tbody, tr, th, td {
 /* Inbox */
 [data-testid="tool-bar"] {
     background: var(--bcbackground-1) !important;
+    border-color: var(--bcborders) !important;
+}
+
+[class$="-view"] {
+    background: none !important;
     border-color: var(--bcborders) !important;
 }

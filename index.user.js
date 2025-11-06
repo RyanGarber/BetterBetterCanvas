@@ -14,22 +14,19 @@
 // ==/UserScript==
 
 const BBC = {
-
     log: (message) => {
         GM.log(`[BBC] ${message}`);
     },
-
     start: async () => {
         BBC.log('Starting BetterBetterCanvas...');
 
         BBC.log('Adding styles...');
-        const css = await GM.getResourceText('CSS');
+        const css = GM.getResourceText('CSS');
         GM.addStyle(css);
         BBC.addStyleToShadow('atomic-search-desktop-widget', css);
 
         BBC.log('Started!'); 
-    },
-
+    }, 
     addStyleToShadow: (name, css) => {
         const shadow = document.querySelector(name)?.shadowRoot;
         if (!shadow) {
@@ -42,7 +39,6 @@ const BBC = {
         stylesheet.replaceSync(css);
         shadow.adoptedStyleSheets.push(stylesheet);
     }
-
 }
 
 if (!unsafeWindow.BBC) {

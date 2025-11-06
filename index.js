@@ -6,7 +6,8 @@ const program = new commaner.Command();
 
 program
     .command('start [port]')
-    .action((port=9080) => {
+    .action((port='random') => {
+		if (port === 'random') port = Math.floor(Math.random() * (65535 - 1024)) + 1024;
         const app = express();
         app.use(express.static(__dirname));
         app.listen(port, () => {
