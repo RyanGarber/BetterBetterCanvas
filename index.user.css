@@ -50,7 +50,7 @@ table, thead, tbody, tr, th, td {
 .question_text > *,
 .question_html > *,
 .answer_text > *,
-.answer_html > *
+.answer_html > *,
 .answer_label > *,
 .answer > *,
 .score_value {
