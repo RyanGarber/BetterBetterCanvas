@@ -57,6 +57,10 @@ table, thead, tbody, tr, th, td {
     color: var(--bctext-1) !important;
 }
 
+.user_content [style*="color: black"] {
+    color: var(--bctext-1) !important;
+}
+
 /* Inbox */
 [data-testid="tool-bar"] {
     background: var(--bcbackground-1) !important;
