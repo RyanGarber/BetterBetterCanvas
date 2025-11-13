@@ -1,16 +1,17 @@
 # BetterBetterCanvas
 
+## Features
+* Fixes the broken dark mode in BetterCanvas.
+
 ## Usage
-Made for **ViolentMonkey** on Firefox.
+Install to any GreaseMonkey-like extension.
 
 ## Dev Environment
-* Run the command to automatically open the script in ViolentMonkey:
-
-|  |  |
-| ------- | ----- |
-| `node index.js start [port]` | **port** is random if unspecified |
-
+Requires Firefox and ViolentMonkey.
+* Run `node index.js start` to open in Firefox
 * Click **Track changes**
-* Check **Reload page**
+* Check **Reload page** (optional)
 
-Edits to **index.user.js** will automatically apply to any open Canvas page.
+Edits to **index.user.js** will now apply to any open Canvas page automatically.
+
+> If a random port is not ideal for you, specify a port number at the end of the command.

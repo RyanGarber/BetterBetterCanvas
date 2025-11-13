@@ -24,7 +24,7 @@ program
             }
             let timeout = null;
             fs.watch(__dirname, { recursive: true }, (event, file) => {
-                if (['.vscode', 'node_modules', 'package-lock.json', 'index.user.js'].includes(file)) return;
+                if (['.git', '.vscode', 'node_modules', 'package-lock.json', 'index.user.js'].includes(file)) return;
                 clearTimeout(timeout);
                 timeout = setTimeout(async () => {
                     let js = await util.promisify(fs.readFile)('index.user.js', 'utf-8');
