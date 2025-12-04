@@ -57,7 +57,8 @@ table, thead, tbody, tr, th, td {
     color: var(--bctext-1) !important;
 }
 
-.user_content [style*="color: black"] {
+.user_content [style*="color: black"],
+.user_content [style*="color: #000"] {
     color: var(--bctext-1) !important;
 }
 
@@ -70,4 +71,24 @@ table, thead, tbody, tr, th, td {
 [class$="-view"] {
     background: none !important;
     border-color: var(--bcborders) !important;
+}
+
+[class$="-modal"],
+[class$="-modalHeader"],
+[class$="-modalFooter"] {
+    background: var(--bcbackground-1) !important;
+    border-color: var(--bcborders) !important;
+}
+
+[class$="-modal"] * {
+    color: var(--bctext-1) !important;
+}
+
+[class*="-mask"] {
+    background: rgba(0, 0, 0, 0.75) !important;
+}
+
+[class$="-view-tag"],
+[class$="-view-tag"] * {
+    background: var(--bcbackground-2) !important;
 }
