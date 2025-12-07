@@ -7,7 +7,7 @@ const util = require('util');
 const program = new commaner.Command();
 
 program
-    .command('start [port]')
+    .command('dev [port]')
     .action((port='random') => {
 		if (port === 'random') port = Math.floor(Math.random() * (65535 - 1024)) + 1024;
         const app = express();

@@ -3,5 +3,8 @@
     "commander": "^14.0.2",
     "express": "^5.1.0",
     "node-fetch": "^3.3.2"
+  },
+  "scripts": {
+    "dev": "node index.js dev"
   }
 }

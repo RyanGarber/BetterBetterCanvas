@@ -1,15 +1,10 @@
 {
     "version": "2.0.0",
-    "options": {
-        "env": {
-            "LOAD_NVM": "1"
-        }
-    },
     "tasks": [
         {
             "label": "Start development server",
-            "type": "shell",
-            "command": "node index.js start",
+            "type": "npm",
+            "script": "dev",
             "runOptions": {
                 "runOn": "folderOpen"
             }
